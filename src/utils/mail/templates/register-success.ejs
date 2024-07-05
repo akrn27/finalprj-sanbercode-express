@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfirmasi Registrasi Berhasil</title>
+    <style>
+      /* Gaya CSS umum */
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .logo {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .content {
+        line-height: 1.5;
+      }
+
+      .user-info {
+        margin-bottom: 20px;
+      }
+
+      .user-info span {
+        font-weight: bold;
+      }
+
+      .cta-button {
+        display: block;
+        width: 150px;
+        height: 40px;
+        margin: 20px auto;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .copyright {
+        font-size: 12px;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Hello, <%= username %></h1>
+        <h1 class="title">Konfirmasi Registrasi Berhasil</h1>
+      </div>
+
+      <div class="content">
+        <p>Halo <%= username %>,</p>
+        <p>
+          Terima kasih telah mendaftar di [Nama Website Anda]! Kami senang kamu
+          bergabung dengan komunitas kami.
+        </p>
+
+        <p>
+          Untuk menyelesaikan proses registrasi, silakan klik tombol di bawah
+          ini untuk memverifikasi alamat email Anda:
+        </p>
+        <a
+          href="https://support.google.com/accounts/answer/63950?hl=id"
+          class="cta-button"
+          >Verifikasi Email</a
+        >
+
+        <p>
+          Jika Anda tidak menerima email verifikasi, silakan periksa folder spam
+          atau hubungi kami.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
